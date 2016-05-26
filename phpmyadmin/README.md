@@ -1,4 +1,4 @@
-# unraid-docker-templates
+# unraid-phpmyadmin
 
 
 ## Usage with linked server
