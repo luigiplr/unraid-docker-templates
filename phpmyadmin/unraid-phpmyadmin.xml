@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>phpmyadmin</Name>
+  <Repository>phpmyadmin/phpmyadmin</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Overview/>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://www.phpmyadmin.net/static/images/logo-og.png</Icon>
+  <ExtraParams>--link mysql:db</ExtraParams>
+  <DateInstalled>1464298126</DateInstalled>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8162</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment/>
+  <Config Name="phpmyadmin Port" Target="80" Default="8162" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">8162</Config>
+</Container>
